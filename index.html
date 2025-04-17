@@ -267,26 +267,6 @@
             }
         }
         
-        .btn-container {
-            text-align: center;
-            margin: 20px 0;
-        }
-        
-        .btn {
-            padding: 10px 15px;
-            background-color: var(--primary-color);
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 14px;
-            transition: background-color 0.2s;
-        }
-        
-        .btn:hover {
-            background-color: var(--accent-color);
-        }
-        
         .hidden-print {
             display: none;
         }
@@ -317,15 +297,6 @@
             
             // Preencher data atual
             fillCurrentDate();
-            
-            // Configurar botão de impressão
-            const printButton = document.getElementById('print-button');
-            if (printButton) {
-                printButton.addEventListener('click', function() {
-                    window.print();
-                    return false;
-                });
-            }
         };
         
         function autoFormatCPF(input) {
@@ -389,10 +360,6 @@
 <body>
     <div class="document">
         <div class="watermark">MEGAADM.COM</div>
-        
-        <div class="hidden-print btn-container">
-            <button id="print-button" class="btn">Imprimir Documento</button>
-        </div>
         
         <div class="header">
             <div class="title">Autodeclaração de Residência</div>
